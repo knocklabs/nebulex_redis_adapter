@@ -5,7 +5,7 @@ defmodule Knock.Nebulex.Adapters.Redis.Serializer.SerializableTest do
 
   defmodule Cache do
     use Knock.Nebulex.Cache,
-      otp_app: :nebulex_redis_adapter,
+      otp_app: :knock_nebulex_redis_adapter,
       adapter: Knock.Nebulex.Adapters.Redis
   end
 

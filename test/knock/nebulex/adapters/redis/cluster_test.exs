@@ -43,7 +43,7 @@ defmodule Knock.Nebulex.Adapters.Redis.ClusterTest do
       defmodule RedisClusterWithInvalidOpts do
         @moduledoc false
         use Knock.Nebulex.Cache,
-          otp_app: :nebulex_redis_adapter,
+          otp_app: :knock_nebulex_redis_adapter,
           adapter: Knock.Nebulex.Adapters.Redis
       end
 
