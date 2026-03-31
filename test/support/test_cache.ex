@@ -17,7 +17,7 @@ defmodule Knock.Nebulex.Adapters.Redis.TestCache do
   defmodule Standalone do
     @moduledoc false
     use Knock.Nebulex.Cache,
-      otp_app: :nebulex_redis_adapter,
+      otp_app: :knock_nebulex_redis_adapter,
       adapter: Knock.Nebulex.Adapters.Redis
 
     use Knock.Nebulex.Adapters.Redis.TestCache.Common
@@ -26,7 +26,7 @@ defmodule Knock.Nebulex.Adapters.Redis.TestCache do
   defmodule RedisCluster do
     @moduledoc false
     use Knock.Nebulex.Cache,
-      otp_app: :nebulex_redis_adapter,
+      otp_app: :knock_nebulex_redis_adapter,
       adapter: Knock.Nebulex.Adapters.Redis
 
     use Knock.Nebulex.Adapters.Redis.TestCache.Common
@@ -35,7 +35,7 @@ defmodule Knock.Nebulex.Adapters.Redis.TestCache do
   defmodule ClientSideCluster do
     @moduledoc false
     use Knock.Nebulex.Cache,
-      otp_app: :nebulex_redis_adapter,
+      otp_app: :knock_nebulex_redis_adapter,
       adapter: Knock.Nebulex.Adapters.Redis
 
     use Knock.Nebulex.Adapters.Redis.TestCache.Common
@@ -44,14 +44,14 @@ defmodule Knock.Nebulex.Adapters.Redis.TestCache do
   defmodule RedisClusterConnError do
     @moduledoc false
     use Knock.Nebulex.Cache,
-      otp_app: :nebulex_redis_adapter,
+      otp_app: :knock_nebulex_redis_adapter,
       adapter: Knock.Nebulex.Adapters.Redis
   end
 
   defmodule RedisClusterWithKeyslot do
     @moduledoc false
     use Knock.Nebulex.Cache,
-      otp_app: :nebulex_redis_adapter,
+      otp_app: :knock_nebulex_redis_adapter,
       adapter: Knock.Nebulex.Adapters.Redis
   end
 end

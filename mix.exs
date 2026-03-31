@@ -6,7 +6,7 @@ defmodule Knock.Nebulex.Adapters.Redis.MixProject do
 
   def project do
     [
-      app: :nebulex_redis_adapter,
+      app: :knock_nebulex_redis_adapter,
       version: @version,
       elixir: "~> 1.15",
       elixirc_paths: elixirc_paths(Mix.env()),
@@ -111,7 +111,7 @@ defmodule Knock.Nebulex.Adapters.Redis.MixProject do
 
   defp package do
     [
-      name: :nebulex_redis_adapter,
+      name: :knock_nebulex_redis_adapter,
       maintainers: ["Carlos Bolanos"],
       licenses: ["MIT"],
       links: %{"GitHub" => @source_url},
