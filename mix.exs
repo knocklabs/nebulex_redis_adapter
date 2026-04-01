@@ -86,7 +86,7 @@ defmodule Knock.Nebulex.Adapters.Redis.MixProject do
     if path = System.get_env("NEBULEX_PATH") do
       {:knock_nebulex, path: path, override: true}
     else
-      {:knock_nebulex, github: "knocklabs/nebulex", ref: "a21edeb18a3f6296838166f81e89fe7690dc9a33"}
+      {:knock_nebulex, github: "knocklabs/nebulex", ref: "2d4a8cca95af2d5d0417ddf2eecce3f4c0a19b5a"}
     end
   end
 
